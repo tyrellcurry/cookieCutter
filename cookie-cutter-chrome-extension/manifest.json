@@ -1,7 +1,7 @@
 {
   "name": "CookieCutter",
   "description": "A Chrome extension that automatically copies Pantheon 'X-Pantheon' cookies from live sites to local development environments.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "permissions": ["cookies", "storage", "tabs"],
   "host_permissions": [
@@ -19,7 +19,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.pantheon.io/*",
+        "*://dashboard.pantheon.io/*",
         "*://127.0.0.1:*/*",
         "*://localhost:*/*",
         "file://*/*"
