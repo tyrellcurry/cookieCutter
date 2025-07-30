@@ -38,9 +38,10 @@ async function storePantheonCookies() {
     const cookies = await chrome.cookies.getAll({});
     const pantheonCookies = cookies.filter(
       (cookie) =>
-        cookie.name === "X-Pantheon-Access-Token" ||
-        (cookie.name === "X-Pantheon-Session" &&
-          cookie.domain.includes("pantheon.io")),
+        (cookie.name === "X-Pantheon-Access-Token" ||
+          cookie.name === "X-Pantheon-Session") &&
+        (cookie.domain === ".pantheon.io" ||
+          cookie.domain === "dashboard.pantheon.io"),
     );
 
     if (pantheonCookies.length > 0) {
