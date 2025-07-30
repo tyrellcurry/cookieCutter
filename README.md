@@ -31,6 +31,10 @@ A Chrome extension that automatically copies Pantheon `X-Pantheon` cookies from 
 - Navigate to your local development environment eg. (`localhost:3000`) and reload the page (reload, not refresh)
 - Pantheon authentication cookies are now automatically applied!
 
+Watch the demo video:
+
+[![YouTube Video](https://img.youtube.com/vi/CtGg9PiYX8w/hqdefault.jpg)](https://youtu.be/CtGg9PiYX8w)
+
 ## FAQs
 
 What if I log into another Pantheon account in the live dashboard and the cookies change?
